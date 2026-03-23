@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Champs 2026 Draft Recap</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 2px solid #f59e0b;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #f59e0b;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            color: #94a3b8;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem 4rem;
+        }
+
+        .intro {
+            background: #1e293b;
+            border-left: 4px solid #f59e0b;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .team-card {
+            background: #1e293b;
+            border-radius: 10px;
+            padding: 1.75rem;
+            margin-bottom: 1.75rem;
+            border: 1px solid #334155;
+            transition: border-color 0.2s;
+        }
+
+        .team-card:hover {
+            border-color: #475569;
+        }
+
+        .team-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .team-name {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #f8fafc;
+        }
+
+        .team-pick {
+            font-size: 0.8rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .key-picks {
+            background: #0f172a;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #f59e0b;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .team-card p {
+            color: #cbd5e1;
+            font-size: 0.92rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .verdict {
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #334155;
+            font-weight: 600;
+        }
+
+        .verdict .grade {
+            color: #f59e0b;
+            font-size: 1.1rem;
+        }
+
+        .rankings {
+            background: #1e293b;
+            border-radius: 10px;
+            padding: 2rem;
+            border: 2px solid #f59e0b;
+        }
+
+        .rankings h2 {
+            font-size: 1.5rem;
+            color: #f59e0b;
+            margin-bottom: 1.25rem;
+            text-align: center;
+        }
+
+        .rankings ol {
+            list-style: none;
+            counter-reset: rank;
+        }
+
+        .rankings li {
+            counter-increment: rank;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #334155;
+            font-size: 0.95rem;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .rankings li:last-child { border-bottom: none; }
+
+        .rankings li::before {
+            content: counter(rank) ".";
+            color: #f59e0b;
+            font-weight: 700;
+            min-width: 1.75rem;
+            text-align: right;
+        }
+
+        .rank-team {
+            font-weight: 600;
+            color: #f8fafc;
+        }
+
+        .rank-note {
+            color: #94a3b8;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #475569;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .team-card { padding: 1.25rem; }
+            main { padding: 1.25rem 1rem 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MLB Champs 2026 Draft Recap</h1>
+        <p>All 16 Teams Reviewed &bull; Snake Draft &bull; 12-Category Roto</p>
+    </header>
+
+    <main>
+        <div class="intro">
+            Welcome to the official recap of the 2026 MLB Champs fantasy draft. Sixteen teams, 400 picks, and one snake draft that produced some fascinating roster constructions. This league scores in 12 categories (R, HR, RBI, SB, AVG, OPS for hitters and K, QS, W, ERA, WHIP, SVHD for pitchers) with an 11 GS weekly cap, which makes pitching strategy just as important as the arms you draft. Let's break down every team, starting from the top of the draft board.
+        </div>
+
+        <!-- BLACKOUT (Pick 1) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">BLACKOUT</span>
+                <span class="team-pick">Pick 1</span>
+            </div>
+            <div class="key-picks">Key Picks: Shohei Ohtani (1.01), Logan Gilbert (2.16), Manny Machado (3.01), Jesus Luzardo (4.16)</div>
+            <p>Taking Ohtani first overall is never wrong. You get the best hitter in fantasy AND a frontline starter in a single roster spot. That dual eligibility is the kind of cheat code that wins leagues. Following up with Logan Gilbert in round 2 is a disciplined pick, locking in elite ratios and strikeouts from a pitcher who just keeps getting better.</p>
+            <p>The middle of this roster is where things get interesting. Machado in the third is solid but unspectacular, and the hitter depth thins out fast after that. Ben Rice, Teoscar Hernandez, Willy Adames, and Ozzie Albies form a functional but not exciting core. The batting average across this lineup is going to be a struggle, with multiple hitters projected south of .250. In a league that counts both AVG and OPS, that's a real concern.</p>
+            <p>The pitching staff is deep but back-loaded with question marks. Luzardo is electric when healthy, but Robbie Ray, Trey Yesavage, Connelly Early, and Sean Manaea are all guys with wide outcome ranges. The RP situation is thin, with Jeff Hoffman, Robert Garcia, and Hunter Gaddis unlikely to pile up saves and holds.</p>
+            <p>The late-round additions of Alec Bohm, Gleyber Torres, and Adolis Garcia give BLACKOUT some bench flexibility, but this team lives and dies with Ohtani's production. If he stays healthy and pitches a full season, BLACKOUT contends. If not, the supporting cast might not be strong enough to carry the load.</p>
+            <div class="verdict"><span class="grade">Verdict: B+.</span> The Ohtani advantage is real, but the lineup depth and AVG concerns keep this from being an A-tier roster. Strong pitching nucleus if Luzardo stays healthy.</div>
+        </div>
+
+        <!-- We Be Cruz'n (Pick 2) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">We Be Cruz'n</span>
+                <span class="team-pick">Pick 2</span>
+            </div>
+            <div class="key-picks">Key Picks: Aaron Judge (1.02), Bryce Harper (2.15), Hunter Brown (3.02), Bo Bichette (4.15)</div>
+            <p>Judge at 2 is the safe play and the right one. He's the best pure power bat in baseball and the OPS upside is off the charts in a league that rewards it. Pairing him with Harper gives this team two elite OPS contributors right out of the gate. That's a strong foundation.</p>
+            <p>The pitching staff is quietly solid. Hunter Brown, Nolan McLean, and Sonny Gray form a respectable top three, and Michael King and Bryce Miller add depth in the middle rounds. The issue is that none of these arms are true aces. In a league with an 11 GS cap, you don't need a deep rotation, but you do need a couple of guys who can dominate a category. This staff will be fine in ERA and WHIP but probably won't lead the league in strikeouts.</p>
+            <p>The offensive lineup has a couple of holes. Drake Baldwin as the catcher in round 7 is fine, but Jackson Holliday and Noelvi Marte are both high-risk picks that need to hit to justify their draft capital. Bichette's move to the Mets should help his counting stats, but the batting average has been declining. The late grab of Carlos Correa is a nice veteran safety net.</p>
+            <p>The RP group of Bryan Abreu, Josh Hader, Matt Brash, and Fernando Cruz is quietly one of the better bullpen corps in the league. Abreu and Hader should lock down SVHD production, and the ratios will be respectable.</p>
+            <div class="verdict"><span class="grade">Verdict: B+.</span> Judge and Harper provide an elite offensive ceiling, and the bullpen is sneaky good. But the SP staff lacks a true ace, and some of the middle-round bats carry real risk.</div>
+        </div>
+
+        <!-- The Natural (Pick 3) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">The Natural</span>
+                <span class="team-pick">Pick 3</span>
+            </div>
+            <div class="key-picks">Key Picks: Bobby Witt Jr. (1.03), Jazz Chisholm Jr. (2.14), Brent Rooker (3.03), Josh Naylor (4.14)</div>
+            <p>Bobby Witt Jr. is a five-category monster and exactly the kind of player you want anchoring a fantasy roster. The combination of average, power, speed, and counting stats at shortstop is simply elite. Jazz Chisholm in round 2 adds another multi-category contributor with positional flexibility, giving this team a dynamic 1-2 punch.</p>
+            <p>But here's where it gets unconventional. This team went ALL in on pitching in the middle and late rounds. Starting with Drew Rasmussen in round 8, The Natural loaded up on SP after SP: Sandy Alcantara, Bubba Chandler, Cade Horton, Edward Cabrera, Mick Abel, Cade Cavalli, Hunter Greene, Will Warren, and Grayson Rodriguez. That's an absurd 12 starting pitchers on a 25-man roster. The philosophy seems clear: stream matchups, work the waiver wire for hot arms, and let volume do the work under the 11 GS cap.</p>
+            <p>The problem? The hitter depth is paper thin. After Witt, Jazz, Rooker, and Naylor, you're looking at Maikel Garcia (solid floor, low ceiling), Jo Adell (boom or bust), Chandler Simpson (speed only), Owen Caissie (unproven), and Francisco Alvarez (massive batting average concerns). This lineup might struggle to field competitive numbers in HR, RBI, and AVG on a weekly basis.</p>
+            <p>The RP group is essentially an afterthought. Grant Taylor, Steven Okert, and Garrett Cleavinger aren't going to move the needle in SVHD.</p>
+            <div class="verdict"><span class="grade">Verdict: B-.</span> The Witt/Jazz core is excellent, and the SP volume strategy could work if managed well. But sacrificing this much hitting depth is a gamble. If two of the top four hitters get hurt, this team is in serious trouble across every offensive category.</div>
+        </div>
+
+        <!-- Struggle Bus (Pick 4) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Struggle Bus</span>
+                <span class="team-pick">Pick 4</span>
+            </div>
+            <div class="key-picks">Key Picks: Juan Soto (1.04), Francisco Lindor (2.13), Ketel Marte (3.04), Jarren Duran (4.13)</div>
+            <p>Don't let the name fool you. This team drafted one of the best offensive cores in the league. Soto is a generational OPS machine. Lindor is a five-category contributor. Marte is an AVG/OPS anchor. Duran adds speed. That first four rounds produced an offense that should compete in virtually every hitting category.</p>
+            <p>But then the draft took a hard left turn. Starting in round 8, Struggle Bus went on a historic reliever run: Andres Munoz (8.13), David Bednar (9.04), Raisel Iglesias (12.13), and Emilio Pagan (13.04). Four closers/high-leverage relievers, all selected before a single starting pitcher. The first SP off the board for this team? Max Scherzer at pick 228. In round 15. That is a bold strategy.</p>
+            <p>To make it work, they loaded up on volume SPs in the late rounds: Shane Smith, Yusei Kikuchi, Reynaldo Lopez, Michael Wacha, Chad Patrick, Tyler Mahle, and Jacob Lopez. None of these are aces, but most are serviceable streamers. With an 11 GS cap, you only need to win your matchups, not dominate them.</p>
+            <p>The SVHD output from this bullpen should be league-leading. Munoz, Bednar, Iglesias, and Pagan could easily combine for 100+ SVHD. That's a massive category advantage every single week.</p>
+            <p>The concern is the SP ratios. When you're running out Wacha, Kikuchi, and Jacob Lopez, you're accepting higher ERAs and WHIPs. If the hitters carry their weight (and they should), this team can afford to punt ERA and WHIP and still compete.</p>
+            <div class="verdict"><span class="grade">Verdict: A-.</span> The offensive foundation is elite, and the punt-SP/load-up-on-RP strategy is bold but viable in this scoring format. The SVHD advantage alone could carry multiple categories. This is a team built with a clear plan, and that plan makes sense.</div>
+        </div>
+
+        <!-- Corbin Barrels (Pick 5) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Corbin Barrels</span>
+                <span class="team-pick">Pick 5</span>
+            </div>
+            <div class="key-picks">Key Picks: Jose Ramirez (1.05), James Wood (2.12), Vinnie Pasquantino (3.05), Cody Bellinger (4.12)</div>
+            <p>Landing Jose Ramirez at 5 is a win. He's a perennial five-category stud and an anchor at third base. James Wood in round 2 is an aggressive play on upside, and if his power develops as expected, this could look brilliant by midseason.</p>
+            <p>But the draft pace slowed after that. Pasquantino and Bellinger are fine, but neither is exciting. The real head-scratcher is Corey Seager in round 5 at pick 69. Yes, Seager is great when healthy, but that's always the caveat with him, and in a 16-team league, that draft slot could have addressed other needs. Zack Wheeler and Aaron Nola as the first two SPs is solid, and Tyler Glasnow adds upside if he can stay on the mound.</p>
+            <p>The lineup has too many low-ceiling bats in the middle. Taylor Ward, Xavier Edwards, Alejandro Kirk, and Matt Wallner are all replacement-level contributors. The power from Ramirez, Seager, and Bellinger is nice, but the speed and AVG are lacking.</p>
+            <p>Four relievers (Tanner Scott, Trevor Megill, Alex Vesia, Luke Weaver) is a lot of bullpen investment for a team that could have used another impact bat or SP. The late additions of Anthony Santander, Josh Lowe, and Ryan Mountcastle all carry negative value projections, which means the bench is basically a wasteland.</p>
+            <div class="verdict"><span class="grade">Verdict: C+.</span> Ramirez is a great cornerstone, and the SP staff has upside. But the offensive depth beyond the top 3-4 hitters is a real problem, and the bench offers almost no safety net. This team needs a lot of things to break right.</div>
+        </div>
+
+        <!-- SANDLOT (Pick 6) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">SANDLOT</span>
+                <span class="team-pick">Pick 6</span>
+            </div>
+            <div class="key-picks">Key Picks: Ronald Acuna Jr. (1.06), Trea Turner (2.11), Roman Anthony (3.06), Dylan Cease (4.11)</div>
+            <p>Acuna falling to 6 is a gift. Even with the ACL recovery, his five-category upside is unmatched when healthy. Trea Turner adds speed and lineup protection, and Roman Anthony is one of the best young bats in baseball. That's a really strong offensive trio.</p>
+            <p>The SP staff is interesting. Dylan Cease is a strikeout machine with improving ratios. Spencer Strider returning from injury adds massive upside but also massive risk. Roki Sasaki in round 11 is a fascinating stash pick. If Sasaki adjusts to MLB, this rotation could be dominant. If he struggles, it's a wasted bench spot.</p>
+            <p>The hitting depth after the top three is the issue. William Contreras at catcher in round 5 is solid. Nico Hoerner is a steady 2B. But Konnor Griffin, Addison Barger, and Dylan Crews are all unproven young players who could easily hit .230 with limited power. The team gambled on youth and upside over established production.</p>
+            <p>The RP trio of Cade Smith, Griffin Jax, and Tony Santillan should be competitive in SVHD (Smith especially is a breakout candidate), and the late addition of Shane Bieber and Quinn Priester adds SP depth.</p>
+            <p>This is the kind of team that could be a top-3 squad by the all-star break or be scrambling on the waiver wire by May. The upside is there, but so is the variance.</p>
+            <div class="verdict"><span class="grade">Verdict: B.</span> Acuna and Roman Anthony give this team an elite ceiling, and the SP pool is deep if Strider and Sasaki deliver. Too many unproven bats in the middle to project confidently.</div>
+        </div>
+
+        <!-- THE BIG Bambinos (Pick 7) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">THE BIG Bambinos</span>
+                <span class="team-pick">Pick 7</span>
+            </div>
+            <div class="key-picks">Key Picks: Tarik Skubal (1.07), Matt Olson (2.10), Bryan Woo (3.07), Mason Miller (4.10)</div>
+            <p>Taking Skubal 7th overall is a statement pick. He's the best pitcher in fantasy, full stop, and in a league with an 11 GS cap, having the guy who wins you ERA, WHIP, and K every single week is a huge advantage. Bryan Woo in round 3 pairs perfectly, giving this team two elite-ratio arms.</p>
+            <p>But then Mason Miller at pick 58? In the 4th round? That's a reach for a reliever in any format. Miller is electric, but the gap between him and the next-best RP is tiny, and you could have filled a roster need with a much more impactful hitter or starter at that slot. Jhoan Duran at pick 90 doubles down on the RP-early strategy, which means this team invested two top-90 picks on relievers.</p>
+            <p>The hitting is where the concerns pile up. Matt Olson is a solid 1B anchor, and Will Smith at catcher is a nice value. But Tyler Soderstrom, Andy Pages, Matt McLain, and Jakob Marsee form one of the weakest offensive cores in the league. The projected HR total of 212 is below the league average, and the SB (113) is in the bottom third.</p>
+            <p>The SP depth beyond Skubal and Woo is thin. Cam Schlittler, Kodai Senga, Spencer Schwellenbach, Brandon Pfaadt, and Randy Vasquez are all high-variance arms. The late addition of Michael McGreevy doesn't inspire much confidence either.</p>
+            <div class="verdict"><span class="grade">Verdict: C+.</span> Skubal and Woo are a dominant 1-2 punch, and the RP investment in Miller and Duran will generate SVHD. But the offensive production is among the weakest in the league, and the SP depth behind the top two is shaky. This team put too many eggs in the pitching basket.</div>
+        </div>
+
+        <!-- Big Blue Nation (Pick 8) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Big Blue Nation</span>
+                <span class="team-pick">Pick 8</span>
+            </div>
+            <div class="key-picks">Key Picks: Corbin Carroll (1.08), Cristopher Sanchez (2.09), Logan Webb (3.08), Pete Crow-Armstrong (4.09)</div>
+            <p>Carroll at 8 is a strong pick. His barrel rate gains and speed profile make him an elite five-category asset. But following that up with Cristopher Sanchez AND Logan Webb in rounds 2-3? That's a lot of pitching investment early for a team that needed offensive firepower. Sanchez and Webb are both solid, but neither is a strikeout monster, which limits their ceiling in a category league.</p>
+            <p>Pete Crow-Armstrong in round 4 is a speed play, but his batting average and OPS project to be below league average. The hitter group beyond Carroll is concerning: Geraldo Perdomo, Dansby Swanson, Lawrence Butler, Luis Arraez, Bryson Stott. These are all fine floor-type players, but none of them are going to carry a team in power categories. The projected HR total of 231 is below average, and the RBI total of 801 is one of the lowest in the league.</p>
+            <p>Arraez is an interesting late pickup as a batting average specialist, and Josh Bell at pick 377 is outstanding value if he's healthy. But Mark Vientos, Spencer Steer, and Jorge Soler are all question marks.</p>
+            <p>The RP group (Abner Uribe, Tyler Rogers, Kevin Ginkel, Brendon Little, Graham Ashcraft) is a hodgepodge. The SVHD projection of 30 is one of the lowest in the league, which is a problem in a format where SVHD is a full scoring category.</p>
+            <div class="verdict"><span class="grade">Verdict: C+.</span> Carroll is a great pick 1, and the SP staff is stable if unsexy. But the offensive depth is weak, the power is lacking, and the RP group is almost nonexistent. This team needs Carroll to carry the offense, and that's a lot to ask.</div>
+        </div>
+
+        <!-- Flint Michigan Tropics (Pick 9) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Flint Michigan Tropics</span>
+                <span class="team-pick">Pick 9</span>
+            </div>
+            <div class="key-picks">Key Picks: Julio Rodriguez (1.09), Yoshinobu Yamamoto (2.08), Rafael Devers (3.09), CJ Abrams (4.08)</div>
+            <p>Julio at 9 is fine. The power-speed combination is still there, and a full healthy season could push him back into the top-5 OF conversation. Yamamoto is a solid SP2 in any rotation. But Devers moving to San Francisco is a real concern for his power numbers, and CJ Abrams in round 4 is a reach for a player who doesn't walk and doesn't hit for average in a league that counts OPS.</p>
+            <p>The middle of this draft is where things went sideways. Eugenio Suarez in round 5 as the 3B is a below-average play. Brandon Lowe in round 8 was once a fantasy star but those days feel over. The hitting core projects for 305 HR, which is solid, but the AVG is going to be ugly. Multiple lineup regulars are projected below .240.</p>
+            <p>The SP group of Yamamoto, MacKenzie Gore, Blake Snell, Tanner Bibee, and Brayan Bello is actually quite good. If Snell has one of his vintage seasons, this rotation could be a top-5 unit. The problem is depth: Eduardo Rodriguez at pick 393 is the only other arm, and that's thin.</p>
+            <p>But here's the most notable thing about this team: FOUR closers. Aroldis Chapman, Carlos Estevez, Kenley Jansen, and Robert Suarez combine for a projected 94 SVHD, which would be among the league leaders. That's a serious category advantage, and the strategy of punting an offensive slot to stack relievers could pay off if managed correctly.</p>
+            <div class="verdict"><span class="grade">Verdict: B-.</span> Solid pitching and elite SVHD production, but the offensive core outside of Julio and Devers is thin and low-average. The team needs its stars to stay healthy and its closers to keep their jobs.</div>
+        </div>
+
+        <!-- FDT (Pick 10) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">FDT</span>
+                <span class="team-pick">Pick 10</span>
+            </div>
+            <div class="key-picks">Key Picks: Elly De La Cruz (1.10), Jackson Chourio (2.07), Max Fried (3.10), Riley Greene (4.07)</div>
+            <p>Elly at 10 is a speed-first pick that makes sense in a league counting SB, but the batting average (.249) and OPS (.741) are below what you want from a first-round pick. Chourio in round 2 is a similar profile: tantalizing tools, but the production hasn't fully arrived yet. This team bet big on youth and potential.</p>
+            <p>Max Fried is a legitimate ace and was the right call in round 3. Framber Valdez adds another quality arm. Emmet Sheehan and Ryan Pepiot give the rotation nice depth. But Andrew Painter in round 10 is a high-risk stash, and Braxton Ashcraft and Joey Cantillo are deep league filler.</p>
+            <p>The hitting depth is a concern. Shea Langeliers, Willson Contreras, and Munetaka Murakami provide some power, but the AVG profile of this lineup is rough. Multiple hitters project below .250, and the RBI total of 796 is among the lowest in the league. JJ Wetherholt in round 13 was a nice value pick, but he's unproven.</p>
+            <p>The RP group (Seranthony Dominguez, Will Vest, Riley O'Brien, JoJo Romero) is a patchwork group that should produce some SVHD but won't dominate.</p>
+            <div class="verdict"><span class="grade">Verdict: C+.</span> Fried and Valdez anchor a respectable rotation, and the Elly/Chourio combo has a high ceiling. But the offensive floor is low, and too many roster spots are occupied by unproven or below-average bats. This team needs its young players to break out to compete.</div>
+        </div>
+
+        <!-- Lil' Sluggers (Pick 11) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Lil' Sluggers</span>
+                <span class="team-pick">Pick 11</span>
+            </div>
+            <div class="key-picks">Key Picks: Kyle Tucker (1.11), Pete Alonso (2.06), Chris Sale (3.11), Austin Riley (4.06)</div>
+            <p>Tucker and Alonso give this team a rock-solid offensive foundation. Tucker is an elite five-category hitter, and Alonso in Baltimore should see a boost in counting stats. Chris Sale in round 3 is a bet on the veteran lefty continuing his resurgence, and Austin Riley at pick 54 is great value if he stays healthy (always the question).</p>
+            <p>The SP staff is where this team shines. Sale, Kyle Bradish, Shota Imanaga, Carlos Rodon, Kris Bubic, Jack Leiter, Justin Steele, and Kyle Harrison provide more depth than almost any other team. Under the 11 GS cap, this team will never be short on quality starts.</p>
+            <p>The masterstroke here is Edwin Diaz in round 6. Getting an elite closer at pick 86 who projects for nearly 1000 fantasy points is outstanding value. Pair him with Daniel Palencia and Jose Alvarado, and the SVHD output should be well above average.</p>
+            <p>The offensive depth is where the cracks show. Jeremy Pena, Ceddanne Rafaela, Jorge Polanco, and Jake Burger are all low-upside bats. Michael Harris II brings speed but modest power. The projected SB total of 122 is below average, and the batting average across the lineup is just okay.</p>
+            <div class="verdict"><span class="grade">Verdict: B+.</span> Elite SP depth, a dominant closer, and two strong offensive anchors in Tucker and Alonso. Riley's health is the swing factor. If he plays 140+ games, this team is a contender. The bench is weak, but the starters are strong enough to overcome it.</div>
+        </div>
+
+        <!-- Get DUMP-ed (Pick 12) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Get DUMP-ed</span>
+                <span class="team-pick">Pick 12</span>
+            </div>
+            <div class="key-picks">Key Picks: Fernando Tatis Jr. (1.12), Cal Raleigh (2.05), Freddie Freeman (3.12), Jackson Merrill (4.05)</div>
+            <p>Tatis and Raleigh in the first two rounds is a power-speed combination that sets up nicely for this format. Raleigh is the clear #1 catcher in fantasy, and getting him at pick 21 is a value play that pays dividends all season. Freeman in round 3 adds stability and a high batting average.</p>
+            <p>The SP staff is one of the deepest in the league. Kevin Gausman, Nathan Eovaldi, Chase Burns, Gavin Williams, Shane Baz, and Max Meyer cover every week with quality arms. Under the 11 GS cap, this team will never struggle to fill its pitching slots.</p>
+            <p>The offensive depth is solid but not spectacular. Merrill, Alec Burleson, Jonathan Aranda, and Ramon Laureano form a usable but unexciting middle class. The 2B spot (Brendan Donovan, Ernie Clement) and 3B spot (Isaac Paredes) are league-average at best. But the power from Tatis, Raleigh, and Freeman should keep the counting stats competitive.</p>
+            <p>The RP situation is the Achilles heel. Adrian Morejon, Jason Adam, Gabe Speier, and Clayton Beeter project for just 21 SVHD. In a league where other teams are stacking closers, this team is essentially punting the category. That's a choice, but it limits the ceiling.</p>
+            <div class="verdict"><span class="grade">Verdict: B.</span> Strong top-of-roster talent and deep SP, but the SVHD punt and average offensive depth in the middle rounds keep this from being a top-tier build. Tatis staying healthy is everything.</div>
+        </div>
+
+        <!-- RehabsForQuitters (Pick 13) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">RehabsForQuitters</span>
+                <span class="team-pick">Pick 13</span>
+            </div>
+            <div class="key-picks">Key Picks: Nick Kurtz (1.13), Yordan Alvarez (2.04), Cole Ragans (3.13), Brice Turang (4.04)</div>
+            <p>Full disclosure: this is the team I know the most about, so I'll try to be fair.</p>
+            <p>The Kurtz/Alvarez 1-2 punch is one of the most interesting combinations in the draft. Kurtz is a rookie with legitimate top-10 1B upside and elite OPS projections. Alvarez is simply one of the best pure hitters in baseball. Together, they project for combined OPS numbers that should top the league.</p>
+            <p>Cole Ragans in round 3 was aggressive for a pitcher, but the elite strikeout rate and improving ratios justify it. Brice Turang in round 4 locks down 2B with speed and a solid average. George Springer at pick 84 is a high-floor veteran who could outperform his draft slot.</p>
+            <p>The pitching depth is respectable: Ragans, Eury Perez, Cody Ponce, Jack Flaherty, Jose Soriano, Zach Eflin, Luis Gil, and Jared Jones give a lot of options to work with under the 11 GS cap. Eury Perez at pick 77 is a nice value for a pitcher with ace potential.</p>
+            <p>The RP group is strong. Devin Williams, Ryan Walker, and Lucas Erceg should produce competitive SVHD numbers, and Williams alone is one of the best relievers in baseball.</p>
+            <p>The concern is the depth beyond the top 5-6 hitters. Kazuma Okamoto (3B) is an unknown quantity in his first MLB season. Ezequiel Tovar plays in Colorado but the OPS profile is modest. Trevor Story is a health gamble. The late pickups of Evan Carter, Trent Grisham, and Wilyer Abreu are all below-average bats. If Kurtz or Alvarez miss time, the offensive production drops significantly.</p>
+            <p>The two-catcher strategy (Kyle Teel and Gabriel Moreno) late is a nice hedge, and Moreno especially has some sneaky upside.</p>
+            <div class="verdict"><span class="grade">Verdict: B+.</span> The top of this roster is elite (Alvarez, Kurtz, Springer), the pitching is deep and balanced, and the RP group is solid. The weak links are the 3B gamble on Okamoto and the bench bat quality. If Kurtz breaks out and Okamoto adjusts to MLB, this could be a top-3 team. If either struggles, the team will need to work the wire.</div>
+        </div>
+
+        <!-- Joe Buck Yourself (Pick 14) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Joe Buck Yourself</span>
+                <span class="team-pick">Pick 14</span>
+            </div>
+            <div class="key-picks">Key Picks: Paul Skenes (1.14), Kyle Schwarber (2.03), Wyatt Langford (3.14), Mookie Betts (4.03)</div>
+            <p>Skenes at 14 is a justifiable pick for the best young arm in baseball, but taking a pitcher in the first round when hitters like Tatis, Seager, and Springer were still available is a choice that comes with opportunity cost. Schwarber in round 2 makes up for it with elite power and OPS.</p>
+            <p>Wyatt Langford in round 3 is a growth stock pick with solid five-category potential. Mookie Betts at pick 51 feels like great value for a player who was a first-rounder not long ago. Even at his age, Betts produces across the board.</p>
+            <p>The SP staff is genuinely excellent. Skenes, Nick Pivetta, Brandon Woodruff, Nick Lodolo, Andrew Abbott, Mitch Keller, Joe Musgrove, and Cristian Javier is one of the deepest rotations in the league. Under the 11 GS cap, this team has the luxury of picking matchups every week.</p>
+            <p>But the RP situation is alarming. Matt Strahm, Bryan King, and Dylan Lee project for just 5 SVHD combined. That's not a punt. That's a forfeit. In a 12-category league, giving away an entire category is a significant handicap.</p>
+            <p>The hitting depth is average. Michael Busch, Jose Altuve, Sal Stewart, Kyle Stowers, and Heliot Ramos are all serviceable. Adley Rutschman at pick 211 is strong value for a starting catcher. But no single hitter other than Schwarber is going to carry a week.</p>
+            <div class="verdict"><span class="grade">Verdict: B.</span> The SP depth is this team's defining strength, and Schwarber/Betts anchor the offense. But the SVHD forfeit is a real problem. This team is essentially playing 11 categories, and even if they win 7-8 of them regularly, they're giving up 1-2 every week by not having a real closer.</div>
+        </div>
+
+        <!-- Iowa Barnstormers (Pick 15) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Iowa Barnstormers</span>
+                <span class="team-pick">Pick 15</span>
+            </div>
+            <div class="key-picks">Key Picks: Gunnar Henderson (1.15), Vladimir Guerrero Jr. (2.02), Freddy Peralta (3.15), George Kirby (4.02)</div>
+            <p>Henderson and Vlad in rounds 1-2 is an outstanding offensive combination. Henderson brings power and speed from SS, while Vlad is the best pure batting average hitter in baseball. That 1-2 start is as good as it gets at the back of the first round.</p>
+            <p>Peralta and Kirby in rounds 3-4 lock in two strong SP anchors. Following up with Jacob Misiorowski and Gerrit Cole gives the rotation serious depth. The pitching here is well-constructed and should compete in every SP category.</p>
+            <p>The problem is everything else. Oneil Cruz in round 5 is a high-variance gamble. Mike Trout at pick 111 is a health gamble at this point in his career. Matt Chapman, Spencer Torkelson, and Jac Caglianone form a low-average, low-OPS middle of the lineup. Jose Caballero is a speed-only utility piece with a .218 AVG projection.</p>
+            <p>The RP group is fascinating. Ryan Helsley, Dennis Santana, Tyler Holton, Jack Dreyer, Kirby Yates, and Edwin Uceta give this team SIX relievers. The SVHD projection of 70 is solid, but the bench is essentially all pitchers, leaving no room for offensive flexibility.</p>
+            <p>The late pick of Nolan Arenado at 370 is a nice flier on the veteran. But this team's offensive projections (708 R, 693 RBI, 207 HR) are among the lowest in the league. With only Henderson and Vlad as reliable offensive producers, there's just not enough depth to compete in 6 hitting categories.</p>
+            <div class="verdict"><span class="grade">Verdict: B-.</span> Henderson and Vlad are an elite 1-2 punch, and the SP/RP depth is strong. But the rest of the offense is a wasteland of low-floor, high-risk bats. This team needs Trout to miraculously stay healthy and Cruz to figure out how to make contact.</div>
+        </div>
+
+        <!-- Salomon's Power (Pick 16) -->
+        <div class="team-card">
+            <div class="team-header">
+                <span class="team-name">Salomon's Power</span>
+                <span class="team-pick">Pick 16</span>
+            </div>
+            <div class="key-picks">Key Picks: Garrett Crochet (1.16), Junior Caminero (2.01), Jacob deGrom (3.16), Zach Neto (4.01)</div>
+            <p>Taking Crochet and deGrom in rounds 1 and 3 is a bold pitching-first strategy from the last pick in round 1. Both are high-upside arms, but both carry significant risk. Crochet is adjusting to a full SP workload in Boston, and deGrom is coming off yet another injury. If they're both healthy and dealing, this is a top-3 rotation. If either misses significant time, there's a big hole.</p>
+            <p>Caminero in round 2 is a bet on breakout potential at 3B. Zach Neto adds a solid SS who contributes across categories. The offensive profile gets interesting with Byron Buxton (health), Luis Robert Jr. (health), and Randy Arozarena (bounce-back). That's a lot of "if healthy" and "if he bounces back" for one roster.</p>
+            <p>The SP depth is remarkable. Crochet, deGrom, Castillo, Shane McClanahan, Parker Messick, Ryne Nelson, Matthew Liberatore, Corbin Burnes, and Kyle Leahy. That's NINE starting pitchers. Even if two go down, this team will always have arms available.</p>
+            <p>But the offensive production is a concern. The projected R (808), RBI (764), and HR (237) are all in the bottom third of the league. Yandy Diaz adds AVG/OPS but not counting stats. Luke Keaschall is unproven. The catcher spot (Samuel Basallo) is a rookie gamble.</p>
+            <p>The RP group (Jeremiah Estrada, Garrett Whitlock, Camilo Doval, Phil Maton) is underweight at only 14 projected SVHD. That's nearly a punt.</p>
+            <div class="verdict"><span class="grade">Verdict: B-.</span> Enormous pitching depth and some exciting offensive upside plays, but the roster is built on too many health gambles and unproven commodities. The offensive projections are below average, and the SVHD production is minimal. This team could be great or could fall apart by June.</div>
+        </div>
+
+        <!-- Final Power Rankings -->
+        <div class="rankings">
+            <h2>Final Power Rankings</h2>
+            <ol>
+                <li><span class="rank-team">Struggle Bus</span> <span class="rank-note">&mdash; Elite offense, league-best SVHD strategy, clear plan</span></li>
+                <li><span class="rank-team">BLACKOUT</span> <span class="rank-note">&mdash; Ohtani is the cheat code; needs lineup depth to hold up</span></li>
+                <li><span class="rank-team">Lil' Sluggers</span> <span class="rank-note">&mdash; Deep SP, elite closer, strong offensive core</span></li>
+                <li><span class="rank-team">RehabsForQuitters</span> <span class="rank-note">&mdash; Alvarez/Kurtz ceiling is huge; balanced build</span></li>
+                <li><span class="rank-team">Get DUMP-ed</span> <span class="rank-note">&mdash; Tatis/Raleigh anchor a deep, well-rounded roster</span></li>
+                <li><span class="rank-team">Joe Buck Yourself</span> <span class="rank-note">&mdash; Incredible SP depth, but the SVHD punt hurts</span></li>
+                <li><span class="rank-team">We Be Cruz'n</span> <span class="rank-note">&mdash; Judge/Harper are elite, but SP lacks a true ace</span></li>
+                <li><span class="rank-team">SANDLOT</span> <span class="rank-note">&mdash; Acuna's upside is unmatched, but the depth is thin</span></li>
+                <li><span class="rank-team">Big Blue Nation</span> <span class="rank-note">&mdash; Carroll is great, but the surrounding cast needs help</span></li>
+                <li><span class="rank-team">The Natural</span> <span class="rank-note">&mdash; Witt is a star, but 12 SPs on one roster is extreme</span></li>
+                <li><span class="rank-team">Iowa Barnstormers</span> <span class="rank-note">&mdash; Henderson/Vlad are incredible, everything else is shaky</span></li>
+                <li><span class="rank-team">Flint Michigan Tropics</span> <span class="rank-note">&mdash; Good SP, elite SVHD, but the offense is rough</span></li>
+                <li><span class="rank-team">THE BIG Bambinos</span> <span class="rank-note">&mdash; Skubal/Woo are dominant, but the lineup is empty</span></li>
+                <li><span class="rank-team">FDT</span> <span class="rank-note">&mdash; Young and exciting, but unproven across the board</span></li>
+                <li><span class="rank-team">Salomon's Power</span> <span class="rank-note">&mdash; Pitching-heavy build with too many health gambles</span></li>
+                <li><span class="rank-team">Corbin Barrels</span> <span class="rank-note">&mdash; Ramirez is elite, but the supporting cast is the weakest in the league</span></li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>Good luck to all 16 teams. See you on the wire.</p>
+        </footer>
+    </main>
+</body>
+</html>
